@@ -4,7 +4,7 @@
 
 RetroScraper is a user-friendly desktop application designed to automatically scan your retro game libraries, download high-quality metadata and artwork, and generate the gamelist.xml files needed by front-ends like EmulationStation.
 
-Its main goal is to simplify the setup process for ArkOS devices, but it should work well with any other operating system that uses the standard EmulationStation folder structure (e.g., RetroPie, Batocera).
+Its main goal is to simplify the setup process for ArkOS devices, but it should work well with any other operating system that uses the standard EmulationStation folder structure (e.g., ROCKNIX, Knulli).
 
 # ✨ Key Features
 
