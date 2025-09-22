@@ -20,6 +20,10 @@ ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("blue")
 
 # Platform mapping dictionary
+# The structure for this is the following:
+# "console_folder_name": "console_page_name_in_LaunchBox"
+# You can get how each console is named in LaunchBox by going into this link: https://gamesdb.launchbox-app.com/
+
 PLATFORM_MAPPING = {
     "dreamcast": "Sega Dreamcast",
     "snes": "Super Nintendo Entertainment System",
@@ -46,6 +50,10 @@ PLATFORM_MAPPING = {
 }
 
 # File extensions to scan
+# Do NOT put .bin into this list as this may break PSX scanning
+# Only lowercase extentions are needed
+# Might need to remake this section for a more complex scanning in the future
+
 SCAN_EXTENSIONS = {'.zip', '.sfc', '.smc', '.sgd', '.smd', '.sms', '.nes', '.gb', '.gbc', '.iso', '.cue', '.chd', '.gba', '.n64', '.nds', '.rvz'}
 
 class GameOrganizerApp(ctk.CTk):
@@ -745,4 +753,5 @@ class GameOrganizerApp(ctk.CTk):
 
 if __name__ == "__main__":
     app = GameOrganizerApp()
+
     app.mainloop()
